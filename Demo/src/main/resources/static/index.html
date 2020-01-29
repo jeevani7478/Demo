@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8">
+<meta
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+	name="viewport">
+<title>Hello</title>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="/dashboard/form1.js"></script>
+<style>
+table, th, td {
+	border: 1px solid black;
+}
+body{
+color:orange;
+}
+</style>
+</head>
+<center>
+<body style= "background-image:url('bg.jpg');background-size: cover;">
+	<h1>Hello User !!!</h1>
+	<h1><marquee direction="right">welcome to   <b>"unanu technologies"</b>....</marquee></h1>
+	<h1>enter your userid and password below</h1>
+	<div>
+		<form id="form1">
+			<div class="col-md-2" style="margin-bottom: 0px">
+				<div class="form-group" style="margin-bottom: 0px">
+					<label class="form-label">Name </label>
+					<div class="form-line">
+						<input id="name" class="form-control" name="name" maxlength="200"
+							placeholder="name">
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="col-md-2" style="margin-bottom: 0px">
+				<div class="form-group" style="margin-bottom: 0px">
+					<label class="form-label">Password </label>
+					<div class="form-line">
+						<input id="password" class="form-control" name="password"
+							maxlength="200" placeholder="password">
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="col-md-2" style="margin-bottom: 0px">
+				<div class="form-group" style="margin-bottom: 0px">
+					<label class="form-label">Min_mark </label>
+					<div class="form-line">
+						<input id="min" class="form-control" name="min"
+							maxlength="200" placeholder="min">
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="col-md-2" style="margin-bottom: 0px">
+				<div class="form-group" style="margin-bottom: 0px">
+					<label class="form-label">Max_mark </label>
+					<div class="form-line">
+						<input id="max" class="form-control" name="max"
+							maxlength="200" placeholder="max">
+					</div>
+				</div>
+			</div>
+			<br>
+			
+			<button id="save" type="button">Save</button>
+			
+		<a href ="re.html" target="_blank"><button id="next" type="button">Next</button></a>
+			<div>
+			<br>
+				<table id="tbDetails">
+					<tbody>
+						<tr>
+							<th>Name</th>
+							<th>Password</th>
+							<th>Min_mark</th>
+							<th>Max_mark</th>
+							<th>Avg</th>
+						</tr>
+					<tbody>
+				</table>
+			</div>
+		</form>
+	</div></center>
+</body>
+</html>
